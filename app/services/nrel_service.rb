@@ -5,7 +5,7 @@ class NrelService
   end
 
   def get_url(params)
-    response = @conn.get("/nrel/alt-fuel-stations/v1/nearest.json?location=#{params}&limit=10&api_key=ffvu6ZpDohHmr1ZgvrlGeS6n3lEBOIMDnQzQAABi")
+    response = @conn.get("/nrel/alt-fuel-stations/v1/nearest.json?location=#{params}&limit=10&api_key=#{ENV['nrel_key']}")
     JSON.parse(response.body, symbolize_names: true)[:fuel_stations]
   end
 
