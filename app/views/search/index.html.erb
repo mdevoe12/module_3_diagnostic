@@ -1,1 +1,12 @@
 <h1>Electric and Propane Stations in your area</h1>
+
+<% @stations.each do |station| %>
+  <ul>
+    <li><%= station.name %>
+        <%= station.address %>
+        <%= station.fuel_types %>
+        <%= station.distance %>
+        <%= station.access_times %>
+    </li>
+  </ul>
+<% end %>
