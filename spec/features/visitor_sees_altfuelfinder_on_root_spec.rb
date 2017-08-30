@@ -2,8 +2,11 @@ require 'rails_helper'
 
 RSpec.feature 'visitor sees AltFuelFinder' do
   scenario 'when visting root path' do
-    visit root_path
+    VCR.use_cassette("features/visitor_sees_altfuelfinder_on_root_spec.rb") do
 
-    expect(page).to have_content("AltFuelFinder")
+      visit root_path
+
+      expect(page).to have_content("AltFuelFinder")
+    end
   end
 end
