@@ -5,6 +5,10 @@
         1,
         null
       ],
+      "/Users/matthewdevoe/turing/3module/assessments/alt-fuel-finder/app/helpers/search_helper.rb": [
+        1,
+        null
+      ],
       "/Users/matthewdevoe/turing/3module/assessments/alt-fuel-finder/app/controllers/welcome_controller.rb": [
         1,
         1,
@@ -18,8 +22,17 @@
         null,
         1,
         null
+      ],
+      "/Users/matthewdevoe/turing/3module/assessments/alt-fuel-finder/app/controllers/search_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1504106246
+    "timestamp": 1504106641
   }
 }
